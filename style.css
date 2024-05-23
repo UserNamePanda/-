@@ -1,0 +1,76 @@
+
+
+.one {
+    width: 1440px;
+    height: 1139px;
+  background-color: #fff;
+  justify-content: center;
+  padding: 64px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding-left: 415px;
+  padding-right: 415px;
+  padding-top: 32px;
+}
+.heads {
+  width: 610px;
+  height: 145px;
+  color: #252525;
+  text-align: center;
+  font-family: Avenir;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 80px; /* 125% */
+}
+
+.text {
+  width: 607px;
+  color: rgba(37, 37, 37, 0.8);
+  text-align: center;
+  font-family: Avenir;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+button {
+  display: flex;
+  padding: 18px 48px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 16px;
+  background: #252525;
+  color: #fff;
+  font-family: Avenir;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 100% */
+}
+
+.image__list {
+  padding-top: 64px;
+  width: 1312px;
+  height: 592px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-left: 80px;
+}
+
+.Rectangle {
+  width: 316px;
+  height: 288px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat, #d9d9d9;
+}

@@ -57,40 +57,64 @@ button {
   padding-right: 64px;
 }
 
-body {
-  max-width: 100%;
-}
-
-.content {
-  display: flex;
-  flex-direction: column; /* Змінюємо напрямок відображення на стовпчик */
-}
-
-.just, .lorem-ipsum, .button, .hero-image {
-  width: 100%; /* Змінюємо ширину на 100%, щоб вони були адаптивними */
-  padding: 0 16px; /* Зменшуємо відступи з усіх боків */
-}
-
-.just {
-  font-size: 32px; /* Зменшуємо розмір шрифту */
-  padding-top: 32px; /* Зменшуємо верхній відступ */
-}
-
-.lorem-ipsum {
-  font-size: 18px; /* Зменшуємо розмір шрифту */
-  padding-top: 16px; /* Зменшуємо верхній відступ */
-  padding-left: 0; /* Видаляємо лівий відступ */
-  padding-right: 0; /* Видаляємо правий відступ */
-}
-
-.button {
-  padding-top: 16px; /* Зменшуємо верхній відступ */
-  width: fit-content; /* Дозволяємо кнопці займати тільки необхідний простір */
-  margin: 16px auto; /* Вирівнюємо по центру */
-}
-
-.hero-image {
-  width: 100%; /* Змінюємо ширину на 100%, щоб займав весь доступний простір */
-  height: auto; /* Автоматично обчислюємо висоту, щоб зберегти пропорції */
-  padding: 16px 0; /* Зменшуємо відступи */
+@media only screen and (max-width: 600px) {
+  body {
+    max-width: 100%;
+  }
+  
+  .content {
+    display: flex;
+  }
+  
+  .just {
+    color: #252525;
+    font-family: Avenir;
+    font-size: 5,5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 5rem; /* 90.909% */
+    width: 42,125rem;
+    padding-left: 4rem;
+    padding-top: 7,625rem;
+  }
+  
+  .lorem-ipsum {
+    color: rgba(37, 37, 37, 0.8);
+    font-family: Avenir;
+    font-size: 1,625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 32,875rem;
+    padding-top: 7,625rem;
+    padding-right:4rem;
+    padding-left: 7,0625rem;
+  }
+  
+  button {
+    padding-top: 1,5rem;
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: flex-start;
+    gap: 0,625rem;
+    border-radius: 1rem;
+    background: #252525;
+    color: aliceblue;
+  }
+  
+  .button{
+    padding-left: 7,0625rem;
+  }
+  
+  
+  .hero-image {
+    width: 82,0625rem;
+    height: 45,75rem;
+    flex-shrink: 0;
+    padding-left: 4rem;
+    padding-top: 7,625rem;
+    padding-bottom: 3,5rem;
+    padding-right: 4rem;
+  }
+  
 }
